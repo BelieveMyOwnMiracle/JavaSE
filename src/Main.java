@@ -5,19 +5,18 @@ public class Main {
     /// - ads
     /// - dgsd
     public static void main(String[] args) {
-        String content1 = "红楼梦\n水浒传";
-        String content2 = "三国演义\r西游记";
+        Person person = new Person();
 
-        System.out.println(content1);
-        System.out.println("=====");
-        System.out.println(content2);
+        int a = 10, b = 20;
+        System.out.println("a = " + a + ", b = " + b);
 
-        byte b = 12;
-        short s = 1345;
-        var v = b + s; //int
+        person.swap(a, b);
+        System.out.println("a = " + a + ", b = " + b);
 
-        int c = -1;
-        c <<= 2;    //直接运算符连上等号即可，跟上面是一样的
-        System.out.println(c);
+        Integer c = 30, d = 40;
+        person.swapInteger(c, d);
+        //Integer的对象是不可变对象，传入参数时已经创建副本了，交换的是副本
+        //一般的引用类型(非final)是可以交换的
+        System.out.println("c = " + c + ", d = " + d);
     }
 }
