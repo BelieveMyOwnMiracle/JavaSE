@@ -16,7 +16,7 @@ public class Main {
         Integer c = 30, d = 40;
         person.swapInteger(c, d);
         //Integer的对象是不可变对象，传入参数时已经创建副本了，交换的是副本
-        //一般的引用类型(非final)是可以交换的
+        //引用类型(非final)是可以实现交换的
         System.out.println("c = " + c + ", d = " + d);
     }
 }
