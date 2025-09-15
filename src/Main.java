@@ -4,7 +4,7 @@ public class Main {
     /// # Markdown格式注释
     /// - ads
     /// - dgsd
-    public static void main(String[] args) {
+    public static void main(String[] args) throws CloneNotSupportedException {
         Person person = new Person();
 
         int a = 10, b = 20;
@@ -21,5 +21,13 @@ public class Main {
 
         Person person1 = new Person();
         Person person2 = new Person();
+
+        Teacher teacher = new Teacher();
+        teacher.study();
+
+        Teacher clone = (Teacher) teacher.clone();
+        System.out.println("clone = " + clone);
+        System.out.println("teacher = " + teacher);
+        System.out.println(clone == teacher);   //Object类中的clone为浅拷贝
     }
 }
