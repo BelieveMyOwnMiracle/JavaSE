@@ -3,6 +3,13 @@ public class Person {
     int age;
     String sex;
 
+    static String info;
+
+    static {
+        info = "Hello World";
+        System.out.println("静态代码块被调用");
+    }
+
     public Person() {}
 
     void swap(int a, int b){

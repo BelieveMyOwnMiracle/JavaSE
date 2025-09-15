@@ -18,5 +18,8 @@ public class Main {
         //Integer的对象是不可变对象，传入参数时已经创建副本了，交换的是副本
         //引用类型(非final)是可以实现交换的
         System.out.println("c = " + c + ", d = " + d);
+
+        Person person1 = new Person();
+        Person person2 = new Person();
     }
 }
