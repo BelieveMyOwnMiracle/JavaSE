@@ -23,7 +23,9 @@ public class Main {
         Person person2 = new Person();
 
         Teacher teacher = new Teacher();
+        teacher.setStatus(Status.RUNNING);
         teacher.study();
+        System.out.println(teacher.getStatus().getName());
 
         Teacher clone = (Teacher) teacher.clone();
         System.out.println("clone = " + clone);
