@@ -448,7 +448,7 @@ public static void main(String[] args) {
 }
 ```
 
-那么我们在方法中怎么才能得到这些传入的参数呢，实际上可变长参数本质就是一个数组：
+那么我们在方法中怎么才能得到这些传入的参数呢，==实际上可变长参数本质就是一个数组==：
 
 ```java
 public void test(String... strings){   //strings这个变量就是一个String[]类型的
@@ -458,7 +458,7 @@ public void test(String... strings){   //strings这个变量就是一个String[]
 }
 ```
 
-注意，如果同时存在其他参数，那么可变长参数只能放在最后：
+注意，如果==同时存在其他参数，那么可变长参数只能放在最后==：
 
 ```java
 public void test(int a, int b, String... strings){
