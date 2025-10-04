@@ -35,5 +35,6 @@ public class Main {
         TestRecord tr1 = new TestRecord(1,"hello");
         TestRecord tr2 = new TestRecord(1,"hello");
         System.out.println(tr1.equals(tr2));
+
     }
 }
