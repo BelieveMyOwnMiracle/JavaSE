@@ -6,7 +6,9 @@ public class BinarySearch {
         int target = 12;
         System.out.println(binarySearch(arr, target));
     }
-
+    /// ### 二分搜索算法
+    ///
+    /// 现在有一个从小到大排序的数组，给你一个目标值`target`，现在我们想要找到这个值在数组中的对应下标，如果数组中没有这个数，请返回`-1`：
     public static int binarySearch(int[] arr, int target) {
         int low = 0;
         int high = arr.length - 1;
