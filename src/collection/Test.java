@@ -2,18 +2,30 @@ package collection;
 
 public class Test {
     public static void main(String[] args) {
-        ArrayList<String> arrayList = new ArrayList<>();
-        for (int i = 0; i < 30; i++) {
-            arrayList.add(i+"",i);
-        }
-        System.out.println(arrayList);
+        LinkedStack<String> stack = new LinkedStack<>();
 
-        LinkedList<Integer> linkedList = new LinkedList<>();
-        linkedList.add(10,0);
-        linkedList.add(20,1);
-        linkedList.add(30,0);
+        stack.push("AAA");
+        stack.push("BBB");
+        stack.push("CCC");
 
-        System.out.println(linkedList);
-        System.out.println(linkedList.get(0));
+        System.out.println(stack.pop());
+        System.out.println(stack.pop());
+        System.out.println(stack.pop());
+
+        LinkedQueue<String> queue = new LinkedQueue<>();
+        queue.offer("AAA");
+        queue.offer("BBB");
+        queue.offer("CCC");
+        System.out.println(queue.poll());
+        System.out.println(queue.poll());
+        System.out.println(queue.poll());
+
+        HashTable<String> hashTable = new HashTable<>();
+        String str = "AAA";
+        System.out.println(hashTable.contains(str));
+        hashTable.insert(str);
+        System.out.println(hashTable.contains(str));
     }
+
+
 }
