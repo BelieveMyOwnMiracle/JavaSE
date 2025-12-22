@@ -20,11 +20,11 @@ public class Test {
         System.out.println(queue.poll());
         System.out.println(queue.poll());
 
-        HashTable<String> hashTable = new HashTable<>();
-        String str = "AAA";
-        System.out.println(hashTable.contains(str));
-        hashTable.insert(str);
-        System.out.println(hashTable.contains(str));
+        HashTable<Integer> hashTable = new HashTable<>();
+        for (int i = 0; i < 70; i++) {
+            hashTable.insert(i);
+        }
+        System.out.println(hashTable);
     }
 
 
