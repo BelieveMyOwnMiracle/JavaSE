@@ -1,6 +1,7 @@
 package iterator;
 
 import java.util.*;
+import java.util.function.Predicate;
 
 public class Test {
     public static void main(String[] args) {
@@ -32,5 +33,10 @@ public class Test {
         List<String> list2 = new ArrayList<>(Arrays.asList("XXX","","CCC",""));
         Collections.copy(list2,list1);
         System.out.println(list2);
+
+        Predicate<Integer> lessThan10 = num -> num > 10;
+        System.out.println(lessThan10.test(12));
+        System.out.println(lessThan10.test(10));
+        System.out.println(lessThan10.test(9));
     }
 }
